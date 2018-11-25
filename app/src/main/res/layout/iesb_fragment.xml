@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:orientation="vertical"
+                                             android:background="@color/colorPrimary">
+
+   <LinearLayout
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:paddingTop="100dp"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <LinearLayout
+              android:layout_width="190dp"
+              android:layout_height="190dp"
+              android:id="@+id/image_icon"
+              android:background="#FFFF"
+              android:orientation="horizontal"
+              android:gravity="center"/>
+
+      <LinearLayout
+              android:layout_height="60dp"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+         <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/screen_title"
+                 android:text="IESB"
+                 android:textColor="#FFFF"
+                 android:gravity="center"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+         <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/screen_sub_title"
+                 android:text="Lorem ipsum dolor sit amet, aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, anim id est laborum."
+                 android:textColor="#FFFF"
+                 android:gravity="center"/>
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>
