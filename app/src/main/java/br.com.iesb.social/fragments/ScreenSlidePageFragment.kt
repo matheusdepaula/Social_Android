@@ -3,6 +3,7 @@ package br.com.iesb.social.fragments
 import android.support.v4.app.Fragment
 import br.com.iesb.social.R
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,15 @@ class ScreenSlidePageFragment : Fragment() {
 
         val position = arguments?.getInt("position")
         position.let {
+
+            when (it) {
+                0 -> view.page_image.setBackgroundResource(R.drawable.icon_pen)
+                1 -> view.page_image.setBackgroundResource(R.drawable.icon_work)
+                else -> view.page_image.setBackgroundResource(R.drawable.Iesb_logo_branco)
+            }
+
+            view.page_image.setColorFilter(getContext()!!.getResources().getColor(R.color.colorAccent));
+
             if (it == 3) {
                 view.enterButton.visibility = View.VISIBLE
             }
