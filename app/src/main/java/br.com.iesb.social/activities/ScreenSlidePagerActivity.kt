@@ -18,7 +18,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener
 /**
  * Number of pages to show
  */
-private const val NUMBER_OF_PAGES = 4
+private const val NUMBER_OF_PAGES = 3
 
 class ScreenSlidePagerActivity: FragmentActivity() {
 
@@ -77,7 +77,6 @@ class ScreenSlidePagerActivity: FragmentActivity() {
             0 -> indicator1
             1 -> indicator2
             2 -> indicator3
-            3 -> indicator4
             else -> indicator1
         }
     }
@@ -89,7 +88,6 @@ class ScreenSlidePagerActivity: FragmentActivity() {
             indicator1.setBackground(it)
             indicator2.setBackground(it)
             indicator3.setBackground(it)
-            indicator4.setBackground(it)
         }
     }
 

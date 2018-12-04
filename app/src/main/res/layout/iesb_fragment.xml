@@ -3,7 +3,7 @@
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              android:orientation="vertical"
-                                             android:background="@color/iesbColor">
+                                             android:background="@drawable/gradient_background">
 
    <LinearLayout
       android:layout_height="wrap_content"
@@ -23,8 +23,7 @@
                     android:paddingHorizontal="22dp"
                     android:paddingVertical="22dp"
                     android:id="@+id/page_image"
-                    android:tint="@color/colorAccent"
-                    android:src="@drawable/icon_pen"/>
+                    android:tint="@color/colorAccent"/>
 
       </LinearLayout>
 

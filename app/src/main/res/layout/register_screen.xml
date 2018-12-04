@@ -3,7 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@color/iesbColor">
+                android:background="@drawable/gradient_background">
 
    <LinearLayout android:layout_width="match_parent"
                  android:layout_height="wrap_content"
@@ -12,13 +12,13 @@
 
       <TextView android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingVertical="16dp"
+                android:paddingVertical="12dp"
                 android:text="IESB MOBILE"
                 android:textColor="@color/colorAccent"/>
 
       <TextView android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingVertical="16dp"
+                android:paddingVertical="10dp"
                 android:paddingHorizontal="22dp"
                 android:text="Bem-vindo, faça seu cadastro"
                 android:textSize="30dp"
@@ -32,11 +32,78 @@
 
       <EditText android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="16dp"
+                android:id="@+id/name"
+                android:paddingVertical="26dp"
                 android:paddingHorizontal="16dp"
-                android:text="Nome completo"
-                android:textColor="@color/colorAccent"/>
+                android:hint="Nome completo"
+                android:textColor="@color/blackText"/>
 
+      <EditText android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:paddingVertical="26dp"
+                android:paddingHorizontal="16dp"
+                android:hint="E-mail"
+                android:textColor="@color/blackText"/>
+
+      <EditText android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:paddingVertical="26dp"
+                android:paddingHorizontal="16dp"
+                android:hint="Nova senha"
+                android:textColor="@color/blackText"/>
+
+      <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+         <EditText android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:id="@+id/city"
+                   android:paddingVertical="26dp"
+                   android:paddingHorizontal="16dp"
+                   android:hint="Cidade"
+                   android:textColor="@color/blackText"/>
+
+         <EditText android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:id="@+id/state"
+                   android:paddingVertical="26dp"
+                   android:paddingHorizontal="16dp"
+                   android:hint="Estado"
+                   android:textColor="@color/blackText"/>
+      </LinearLayout>
+
+      <Button android:layout_width="250dp"
+              android:layout_height="60dp"
+              android:text="Entrar"
+              android:id="@+id/enter_new_account"
+              android:textColor="@color/iesbColor"
+              android:layout_gravity="center"
+              android:layout_marginVertical="16dp"
+              android:background="@color/colorAccent"/>
+
+      <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+         <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorAccent"
+                   android:alpha="0.7"
+                   android:text="JÁ É ALUNO?"
+                   android:layout_marginHorizontal="6dp"/>
+
+         <Button android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/enter_now"
+                 android:text="ENTRE AGORA"
+                 android:textColor="@color/blackText"
+                 android:background="#00000000"/>
+
+      </LinearLayout>
    </LinearLayout>
-
 </LinearLayout>
